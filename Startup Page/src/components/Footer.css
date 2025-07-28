@@ -1,0 +1,44 @@
+.footer {
+  background-color: #1c1c1c;
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.footer h5,
+.footer h6 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.footer p {
+  color: #cccccc;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.footer-link {
+  color: #cccccc;
+  font-size: 0.95rem;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer hr {
+  border-color: #444;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer .text-muted {
+  color: #aaaaaa !important;
+  font-size: 0.85rem;
+}

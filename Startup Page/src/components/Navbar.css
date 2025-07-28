@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+.custom-navbar {
+  border-bottom: 2px solid #0066cc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.custom-navbar h6 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.custom-navbar small {
+  font-size: 12px;
+  color: #555;
+}
+
+.navbar-nav .nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  margin-right: 12px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0066cc !important;
+}

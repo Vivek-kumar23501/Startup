@@ -1,0 +1,27 @@
+.register-wrapper {
+  background-color: #e6f2ff;
+  min-height: 150vh;
+  padding-top: 40px;
+  
+}
+
+.card {
+  border-radius: 10px;
+    height: 400px;
+}
+
+button.btn-primary {
+  background-color: #3399ff;
+  border: none;
+}
+
+button.btn-primary:hover {
+  background-color: #007bff;
+}
+
+@media (min-width: 768px) {
+ 
+    .card {
+        margin-left: 120px;
+    }
+}

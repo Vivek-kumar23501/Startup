@@ -1,0 +1,29 @@
+
+
+.login-btn {
+  background-color: #3399ff;
+  border: none;
+  width: 50%;
+}
+
+.login-btn:hover {
+  background-color: #007bff;
+}
+
+.card {
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+ 
+  
+
+}
+@media (min-width: 768px) {
+ .card {
+    width: 400px;
+    height: 400px;
+    
+  }
+    
+}
+

@@ -1,0 +1,50 @@
+.notice-plain {
+  background-color: #fdfdfd;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.all-notices {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.single-notice {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.notice-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #003366;
+  margin-bottom: 6px;
+}
+
+.new-badge {
+  font-size: 0.9rem;
+  color: #d10000;
+  font-weight: 500;
+}
+
+.notice-meta {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.notice-desc {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .notice-title {
+    font-size: 1.25rem;
+  }
+  .notice-meta,
+  .notice-desc {
+    font-size: 0.95rem;
+  }
+}
