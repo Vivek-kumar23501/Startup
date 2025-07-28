@@ -12,7 +12,7 @@ const AppliedCandidatesPage = () => {
 
   const fetchApplications = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/applications/all');
+      const res = await axios.get('https://startup-w0fm.onrender.com');
       const applications = res.data;
 
       // ✅ Group applications by eventId
