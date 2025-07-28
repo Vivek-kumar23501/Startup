@@ -26,7 +26,7 @@ const InstituteDashboard = () => {
 
   const fetchEvents = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/institute/events');
+      const res = await axios.get('https://startup-w0fm.onrender.com');
       setActiveEvents(Array.isArray(res.data) ? res.data : []);
     } catch (err) {
       console.error('❌ Error fetching events:', err.message);
@@ -37,7 +37,7 @@ const InstituteDashboard = () => {
 
   const handleDelete = async (eventId) => {
     try {
-      await axios.delete(`http://localhost:5000/api/institute/events/${eventId}`);
+      await axios.delete(`https://startup-w0fm.onrender.com/${eventId}`);
       setAlert({ type: 'success', message: '✅ Event deleted successfully' });
       setActiveEvents((prev) => prev.filter((e) => e._id !== eventId));
     } catch (err) {
