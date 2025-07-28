@@ -15,7 +15,7 @@ const GalleryPage = () => {
 
   const fetchGallery = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/institute/gallery");
+      const res = await axios.get("https://startup-w0fm.onrender.com");
       setPhotos(Array.isArray(res.data) ? res.data : []);
     } catch (err) {
       console.error("❌ Error loading gallery:", err.message);
