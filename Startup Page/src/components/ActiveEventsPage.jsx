@@ -14,7 +14,7 @@ const ActiveEventsPage = () => {
 
   const fetchEvents = async () => {
     try {
-      const res = await axios.get('https://startup-w0fm.onrender.com');
+      const res = await axios.get('http://localhost:5000/api/institute/events');
       setEvents(Array.isArray(res.data) ? res.data : []);
     } catch (err) {
       console.error("❌ Error fetching events:", err.message);
