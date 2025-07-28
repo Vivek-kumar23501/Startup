@@ -28,7 +28,7 @@ const ApplyFormPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/applications/manual-apply', {
+      await axios.post('https://startup-w0fm.onrender.com', {
         ...formData,
         eventId
       });
