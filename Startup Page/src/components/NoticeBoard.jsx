@@ -13,7 +13,7 @@ const NoticePage = () => {
   useEffect(() => {
     const fetchNotices = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/institute/notices');
+        const res = await axios.get('https://startup-w0fm.onrender.com');
         setNotices(res.data);
       } catch (err) {
         console.error('❌ Error fetching notices:', err.message);
