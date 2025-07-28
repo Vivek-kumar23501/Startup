@@ -10,7 +10,7 @@ const ViewStartupSubmissions = () => {
   useEffect(() => {
     const fetchIdeas = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/ideas');
+        const res = await axios.get('https://startup-w0fm.onrender.com');
         setIdeas(res.data);
       } catch (err) {
         console.error("❌ Failed to fetch startup ideas:", err);
