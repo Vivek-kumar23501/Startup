@@ -44,7 +44,7 @@ const IdeaForm = () => {
     data.append('ideaDocument', file);
 
     try {
-      const res = await axios.post('http://localhost:5000/api/ideas/submit', data);
+      const res = await axios.post('https://startup-w0fm.onrender.com', data);
       setStatus('✅ Idea submitted successfully!');
     } catch (err) {
       console.error(err);
