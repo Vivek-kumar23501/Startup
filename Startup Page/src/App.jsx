@@ -22,6 +22,7 @@ import CreateNoticePage from './components/CreateNoticePage';
 import DeleteNoticePage from './components/DeleteNoticePage';
 import InstituteGalleryUpload from './components/InstituteGalleryUpload';
 import GalleryPage from './components/GalleryPage';
+ // ✅ Import the Admin Dashboard
 
  // ✅ Import the Delete Notice Page
 // ✅ Import the Ment
@@ -68,6 +69,7 @@ function App() {
 <Route path="/institute/delete-notice" element={<DeleteNoticePage />} />
 <Route path="/institute/gallery" element={<InstituteGalleryUpload />} />
 <Route path="/gallery" element={<GalleryPage />} />
+ {/* ✅ Admin Dashboard route */}
       </Routes>
 
       <Footer />
