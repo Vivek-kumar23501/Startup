@@ -10,7 +10,7 @@ const ViewStartupSubmissions = () => {
   useEffect(() => {
     const fetchIdeas = async () => {
       try {
-        const res = await axios.get('https://startup-w0fm.onrender.com');
+        const res = await axios.get('http://localhost:5000/api/ideas');
         setIdeas(res.data);
       } catch (err) {
         console.error("❌ Failed to fetch startup ideas:", err);
@@ -23,7 +23,7 @@ const ViewStartupSubmissions = () => {
   }, []);
 
   const downloadFile = (ideaId) => {
-    window.open(`http://localhost:5000/api/ideas/download/${ideaId}`, '_blank');
+   window.open(`http://localhost:5000/api/ideas/download/${ideaId}`, '_blank');
   };
 
   return (
