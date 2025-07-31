@@ -32,7 +32,7 @@ const CreateNoticePage = () => {
     e.preventDefault();
 
     try {
-      await axios.post('https://startup-w0fm.onrender.com', formData);
+      await axios.post('http://localhost:5000/api/institute/notice', formData);
       setAlert({ type: 'success', message: '✅ Notice created successfully!' });
 
       setFormData({
