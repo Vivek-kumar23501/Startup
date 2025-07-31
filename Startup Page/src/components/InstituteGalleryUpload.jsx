@@ -34,7 +34,7 @@ const InstituteGalleryUpload = () => {
     }
 
     try {
-      const res = await fetch("https://startup-w0fm.onrender.com", {
+     const res = await fetch("http://localhost:5000/api/institute/gallery", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
