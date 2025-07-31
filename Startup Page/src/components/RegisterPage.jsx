@@ -45,7 +45,7 @@ const RegisterPage = () => {
     }
 
     try {
-      const res = await axios.post("https://startup-w0fm.onrender.comr", formData);
+       const res = await axios.post("http://localhost:5000/api/auth/register", formData);
       setSuccess("Registration successful. Please check your email to verify.");
       setError("");
       setFormData({
