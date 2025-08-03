@@ -54,10 +54,12 @@ const LoginPage = () => {
 
       <div className="login-wrapper">
         <Container className="d-flex justify-content-center align-items-center min-vh-100">
-          <Row className="w-100 justify-content-center">
+          <Row className="w-100 justify-content-center"  style={{
+           marginRight:"20px"
+          }}>
             <Col md="6" lg="5">
-              <Card className="shadow-lg">
-                <CardBody>
+              <Card className="shadow-lg" mar >
+                <CardBody    className="login">
                   <CardTitle tag="h4" className="text-center mb-4 text-primary">
                     Login to Your Account
                   </CardTitle>

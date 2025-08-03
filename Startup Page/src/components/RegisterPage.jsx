@@ -69,7 +69,9 @@ const RegisterPage = () => {
 
       <div className="register-wrapper">
         <Container className="d-flex justify-content-center align-items-center min-vh-100">
-          <Row className="w-100 justify-content-center">
+          <Row className="w-100 justify-content-center" style={{
+            marginRight: "20px"
+          }}>
             <Col md="8" lg="6">
               <Card className="shadow-lg">
                 <CardBody>
