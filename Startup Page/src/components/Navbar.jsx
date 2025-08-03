@@ -63,7 +63,7 @@ function GecNavbar() {
             <DropdownMenu end>
               <DropdownItem tag={Link} to="/login/user">User Login</DropdownItem>
               <DropdownItem tag={Link} to="/login/institute">Institute Login</DropdownItem>
-              <DropdownItem tag={Link} to="/login/admin">Admin Login</DropdownItem>
+            
             </DropdownMenu>
           </UncontrolledDropdown>
         </Nav>
