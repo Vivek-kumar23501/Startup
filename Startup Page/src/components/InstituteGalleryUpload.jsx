@@ -9,7 +9,7 @@ import {
   Button,
   Alert,
 } from "reactstrap";
-import GecNavbar from "./Navbar";
+import InstituteNavbar from "./instutenavbar"; // Importing the Institute Navbar
 
 const InstituteGalleryUpload = () => {
   const [image, setImage] = useState(null);
@@ -59,7 +59,7 @@ const InstituteGalleryUpload = () => {
 
   return (
     <>
-      <GecNavbar />
+     <InstituteNavbar/>
       <Container className="my-5">
         <h2 className="mb-4 text-center">📤 Upload Photo to Gallery</h2>
         {alert.message && <Alert color={alert.type}>{alert.message}</Alert>}

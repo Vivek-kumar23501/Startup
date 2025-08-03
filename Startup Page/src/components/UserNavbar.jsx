@@ -27,7 +27,7 @@ const UserNavbar = () => {
   }, []);
 
   return (
-    <Navbar color="light" light expand="md" className="custom-navbar w-100 shadow-sm">
+    <Navbar color="info" light expand="md" className="custom-navbar w-100 shadow-sm">
       <NavbarBrand tag={NavLink} to="/" className="d-flex align-items-center">
         <img
           src="/public/logo.png"

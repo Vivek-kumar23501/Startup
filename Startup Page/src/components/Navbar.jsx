@@ -20,10 +20,10 @@ function GecNavbar() {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Navbar color="light" light expand="md" className="custom-navbar w-100">
+    <Navbar color="info" light expand="md" className="custom-navbar w-100">
       <NavbarBrand tag={Link} to="/" className="d-flex align-items-center">
         <img
-          src="/public/logo.png"
+          src="/logo.png"
           alt="GECWC Logo"
           className="me-2"
           width="60"

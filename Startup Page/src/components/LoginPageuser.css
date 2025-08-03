@@ -10,20 +10,36 @@
   background-color: #007bff;
 }
 
+
 .card {
   border-radius: 10px;
   height: 300px;
-  width: 300px;
+  width: 250px;
  
   
 
 }
 @media (min-width: 768px) {
  .card {
-    width: 400px;
+    width: 350px;
     height: 400px;
+   
     
+  
+    
+}
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+margin-right: 50px;
+}
+}
+@media(max-width: 768px) {
+  .card {
+    width: 100%;
+    height: 100%;
+   margin-right: 250px;
   }
-    
 }
 

@@ -22,6 +22,8 @@ button.btn-primary:hover {
 @media (min-width: 768px) {
  
     .card {
-        margin-left: 120px;
+        margin-left: 70px;
+        width: 400px;
     }
 }
+
