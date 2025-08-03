@@ -22,6 +22,7 @@ import CreateNoticePage from './components/CreateNoticePage';
 import DeleteNoticePage from './components/DeleteNoticePage';
 import InstituteGalleryUpload from './components/InstituteGalleryUpload';
 import GalleryPage from './components/GalleryPage';
+import StartupShowcase from './components/StartupShowcase';
  // ✅ Import the Admin Dashboard
 
  // ✅ Import the Delete Notice Page
@@ -54,7 +55,9 @@ function App() {
         <Route path="/user-dashboard" element={<UserDashboard />} />
         <Route path="/institute-dashboard" element={<InstituteDashboard />} />
         <Route path="/institute/create-event" element={<CreateEventForm />} />
-        <Route path="/institute/applications" element={<AppliedCandidatesPage />} /> {/* ✅ route added */}
+        <Route path="/institute/applications" element={<AppliedCandidatesPage />} />
+        <Route path="startup-bihar-showcase" element={<StartupShowcase />} />
+         {/* ✅ route added */}
         
         {/* ✅ route added */}
         <Route path="/submit-idea" element={<IdeaForm />} />

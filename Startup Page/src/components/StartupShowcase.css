@@ -1,0 +1,14 @@
+.startup-showcase-section {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.startup-card {
+  background-color: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+.startup-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}

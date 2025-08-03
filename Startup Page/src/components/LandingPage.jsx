@@ -112,16 +112,18 @@ const AboutUs = () => {
           </Col>
         </Row>
 
-        <Row className="text-center mt-5">
-          <Col md="12">
-            <h3 className="mb-4">Ready to Launch Your Startup?</h3>
-            <p className="mb-4">Join our Startup Cell today and begin your entrepreneurial journey with guidance, support, and community.</p>
-            {/* ✅ Step 3: Navigate to /submit-idea */}
-            <Button color="dark" size="lg" onClick={() => navigate('/submit-idea')}>
-              Apply Now
-            </Button>
-          </Col>
-        </Row>
+      <Row className="text-center mt-5">
+  <Col md="12">
+    <h3 className="mb-3">Selected Startups under Startup Bihar</h3>
+    <p className="mb-4">
+      Explore innovative ideas from our campus that have been recognized under the Startup Bihar initiative.
+    </p>
+    <Button color="dark" size="lg" onClick={() => navigate('/startup-bihar-showcase')}>
+      View Selected Startups
+    </Button>
+  </Col>
+</Row>
+
       </Container>
     </div>
   );

@@ -11,6 +11,7 @@ import {
   CardBody,
   CardTitle,
 } from 'reactstrap';
+import './ideaform.css';
 import axios from 'axios';
 import UserNavbar from './UserNavbar';
 
