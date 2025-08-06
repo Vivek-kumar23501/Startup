@@ -13,14 +13,14 @@ const PORT = process.env.PORT || 5000;
 
 // ✅ Middleware
 app.use(cors({
-  origin: "http://localhost:5173", // Replace with your frontend URL
+  origin: "http://localhost:5173",
   credentials: true
 }));
-app.use(express.json({ limit: "10mb" })); // for base64 image data
+app.use(express.json({ limit: "10mb" }));
 app.use(helmet());
 app.use(morgan("dev"));
 
-// ✅ Connect to MongoDB
+// ✅ MongoDB Connection
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
@@ -31,7 +31,7 @@ mongoose.connect(process.env.MONGO_URI, {
     process.exit(1);
   });
 
-// ✅ Static folder (if needed in other cases)
+// ✅ Static Folder
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // ✅ Route Imports
@@ -40,34 +40,34 @@ const instituteRoutes = require("./routes/instituteRoutes");
 const ideaRoutes = require("./routes/ideaRoutes");
 const applicationRoutes = require("./routes/applicationRoutes");
 const noticeRoutes = require("./routes/noticeRoutes");
-const galleryRoutes = require("./routes/galleryRoutes"); // ✅ NEW gallery route
+const galleryRoutes = require("./routes/galleryRoutes");
 
-// ✅ API Routes
+// ✅ Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/institute", instituteRoutes);
 app.use("/api/ideas", ideaRoutes);
 app.use("/api/applications", applicationRoutes);
 app.use("/api/institute", noticeRoutes);
-app.use("/api/institute", galleryRoutes); // ✅ New route for photo upload
+app.use("/api/institute", galleryRoutes);
 
-// ✅ Health check
+// ✅ Health Check
 app.get("/", (req, res) => {
   res.send("🚀 Startup backend is running");
 });
 
-// ✅ Handle 404
+// ✅ Fallback Route
 app.use("*", (req, res) => {
   res.status(404).json({ message: "API endpoint not found" });
 });
 
-// ✅ Graceful shutdown
+// ✅ Graceful Shutdown
 process.on("SIGINT", async () => {
   await mongoose.disconnect();
   console.log("🛑 MongoDB disconnected on app termination");
   process.exit(0);
 });
 
-// ✅ Start server
+// ✅ Start Server
 app.listen(PORT, () => {
   console.log(`🚀 Server running on http://localhost:${PORT}`);
 });

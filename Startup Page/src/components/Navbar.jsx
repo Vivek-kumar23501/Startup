@@ -20,7 +20,7 @@ function GecNavbar() {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Navbar color="info" light expand="md" className="custom-navbar w-100">
+    <Navbar  light expand="md" className="custom-navbar w-100">
       <NavbarBrand tag={Link} to="/" className="d-flex align-items-center">
         <img
           src="/logo.png"
@@ -31,7 +31,7 @@ function GecNavbar() {
         />
         <div>
           <h4 className="mb-0">Startup Cell</h4>
-          <small>Government Engineering College West Champaran, Bihar</small>
+          <small>Government Engineering College West Champaran</small>
         </div>
       </NavbarBrand>
 

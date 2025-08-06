@@ -1,12 +1,21 @@
+
+*
+{
+  margin:0px ;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
 .hero-section {
-  background: linear-gradient(to right, #11998e, #38ef7d);
+  background: linear-gradient(to right, #10f3e0, #0e89b9);
   color: white;
   padding: 2rem 0;
   min-height: 100%;
 }
 
 .hero-left {
-  background: linear-gradient(to right, #11998ecc, #38ef7dcc), url('/hero-banner.jpg') center/cover no-repeat;
+
   min-height: 350px;
   display: flex;
   align-items: center;

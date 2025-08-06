@@ -1,29 +1,49 @@
+/* RegisterPage.css */
+
 .register-wrapper {
-  background-color: #e6f2ff;
-  min-height: 150vh;
-  padding-top: 40px;
-  
+  background-color: #f9f9f9;
+  padding: 2rem 1rem;
+  min-height: 100vh;
 }
 
-.card {
-  border-radius: 10px;
-    height: 400px;
+.register-card {
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
 }
 
-button.btn-primary {
-  background-color: #3399ff;
-  border: none;
+/* Adjustments for form fields */
+.register-card .form-group label {
+  font-weight: 500;
 }
 
-button.btn-primary:hover {
-  background-color: #007bff;
+.register-card .form-control {
+  font-size: 1rem;
 }
 
-@media (min-width: 768px) {
- 
-    .card {
-        margin-left: 70px;
-        width: 400px;
-    }
-}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .register-wrapper {
+    padding: 1rem 0.5rem;
+  }
 
+  .register-card {
+    padding: 1rem;
+  }
+
+  .register-card .form-group label {
+    font-size: 0.95rem;
+  }
+
+  .register-card .form-control {
+    font-size: 0.95rem;
+  }
+
+  .register-card .btn {
+    font-size: 1rem;
+  }
+
+  .text-center.mt-3 {
+    font-size: 0.9rem;
+  }
+}

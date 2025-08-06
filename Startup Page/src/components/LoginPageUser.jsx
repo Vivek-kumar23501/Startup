@@ -15,8 +15,8 @@ import {
 } from "reactstrap";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import "./LoginPageuser.css";
-import GecNavbar from "./Navbar";  // ✅ Importing Navbar
+//import "./LoginPageuser.css";
+import GecNavbar from "./Navbar";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -32,7 +32,6 @@ const LoginPage = () => {
         password
       });
 
-      // ✅ Role-based redirection
       if (response.data.role === "admin") {
         navigate("/admin-dashboard");
       } else if (response.data.role === "institute") {
@@ -50,16 +49,17 @@ const LoginPage = () => {
 
   return (
     <>
-      <GecNavbar /> {/* ✅ Navbar included at the top */}
+      <GecNavbar />
 
       <div className="login-wrapper">
         <Container className="d-flex justify-content-center align-items-center min-vh-100">
-          <Row className="w-100 justify-content-center"  style={{
-           marginRight:"20px"
-          }}>
-            <Col md="6" lg="5">
-              <Card className="shadow-lg" mar >
-                <CardBody    className="login">
+          <Row className="w-100 justify-content-center px-2">
+            <Col xs="12" sm="10" md="8" lg="5">
+              <Card style={{
+              
+                width: "300px"
+              }} className="shadow-lg login-card">
+                <CardBody>
                   <CardTitle tag="h4" className="text-center mb-4 text-primary">
                     Login to Your Account
                   </CardTitle>
@@ -99,6 +99,11 @@ const LoginPage = () => {
                   <div className="text-center mt-3">
                     <Link to="/register" className="text-decoration-none text-primary">
                       Create New Account
+                    </Link>
+                    </div>
+                    <div className="text-center mt-3" >
+                     <Link to="/forgot-password" className="text-decoration-none text-primary">
+                      Forget Password?
                     </Link>
                   </div>
                 </CardBody>

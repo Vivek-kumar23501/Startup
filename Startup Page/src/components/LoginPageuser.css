@@ -1,54 +1,65 @@
-/* General Login Button */
-*{
-  padding: 0px;
-  margin: 0px;
+/* LoginPageuser.css */
+
+.login-wrapper {
+  background-color: #f2f4f8;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 500px;  /* ✅ Prevent card from overflowing */
   box-sizing: border-box;
 }
+
+/* Label and Input tweaks */
+.login-card .form-group label {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.login-card .form-control {
+  font-size: 1rem;
+}
+
+/* Login button style */
 .login-btn {
-  background-color: #3399ff;
-  border: none;
-  width: 100%; /* Full width on all screens */
+  font-size: 1rem;
+  padding: 0.6rem;
 }
 
-.login-btn:hover {
-  background-color: #007bff;
-}
-
-/* Card Styling */
-.card {
-  border-radius: 10px;
-  width: 100%; /* Responsive default width */
-  max-width: 400px;
-  margin: auto;
-}
-
-/* Medium and above devices */
-@media (min-width: 768px) {
-  .card {
-    height: auto;
-    padding: 20px;
-  }
-}
-
-/* Mobile specific styles */
+/* Responsive tweaks */
 @media (max-width: 768px) {
-  .card {
-    height: auto;
-    padding: 10px;
-    margin-right: 20px;
-   
-  }
-
   .login-wrapper {
-    padding: 00px 00px;
-    width: 100%;
+    padding: 1rem;
+  }
+
+  .login-card {
+    width: 25px;
+    
+
+  }
+
+  .login-card .form-group label {
+    font-size: 0.95rem;
+  }
+
+  .login-card .form-control {
+    font-size: 0.95rem;
+  }
+
+  .login-btn {
+    font-size: 0.95rem;
+    padding: 0.5rem;
+  }
+
+  .text-center.mt-3 {
+    font-size: 0.9rem;
   }
 }
-.login-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background-color: #f8f9fa;
-}
-

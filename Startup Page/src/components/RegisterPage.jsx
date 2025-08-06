@@ -16,7 +16,7 @@ import {
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./RegisterPage.css";
-import GecNavbar from "./Navbar"; // ✅ Importing the Navbar
+import GecNavbar from "./Navbar";
 
 const RegisterPage = () => {
   const [formData, setFormData] = useState({
@@ -45,7 +45,7 @@ const RegisterPage = () => {
     }
 
     try {
-       const res = await axios.post("http://localhost:5000/api/auth/register", formData);
+      const res = await axios.post("http://localhost:5000/api/auth/register", formData);
       setSuccess("Registration successful. Please check your email to verify.");
       setError("");
       setFormData({
@@ -65,15 +65,13 @@ const RegisterPage = () => {
 
   return (
     <>
-      <GecNavbar /> {/* ✅ Navbar added */}
+      <GecNavbar />
 
       <div className="register-wrapper">
         <Container className="d-flex justify-content-center align-items-center min-vh-100">
-          <Row className="w-100 justify-content-center" style={{
-            marginRight: "20px"
-          }}>
-            <Col md="8" lg="6">
-              <Card className="shadow-lg">
+          <Row className="w-100 justify-content-center px-2">
+            <Col xs="12" sm="10" md="8" lg="6">
+              <Card className="shadow-lg register-card">
                 <CardBody>
                   <CardTitle tag="h4" className="text-center text-primary mb-4">
                     Student Registration

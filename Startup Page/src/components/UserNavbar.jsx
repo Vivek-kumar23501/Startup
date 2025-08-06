@@ -27,7 +27,7 @@ const UserNavbar = () => {
   }, []);
 
   return (
-    <Navbar color="info" light expand="md" className="custom-navbar w-100 shadow-sm">
+    <Navbar  light expand="md" className="custom-navbar w-100 shadow-sm">
       <NavbarBrand tag={NavLink} to="/" className="d-flex align-items-center">
         <img
           src="/public/logo.png"
@@ -38,7 +38,7 @@ const UserNavbar = () => {
         />
         <div>
           <h4 className="mb-0">Startup Cell</h4>
-          <small>Government Engineering College West Champaran, Bihar</small>
+          <small>Government Engineering College West Champaran</small>
         </div>
       </NavbarBrand>
 

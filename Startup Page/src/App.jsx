@@ -1,4 +1,6 @@
 import React from 'react';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route,  } from 'react-router-dom';
 import GecNavbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -23,6 +25,7 @@ import DeleteNoticePage from './components/DeleteNoticePage';
 import InstituteGalleryUpload from './components/InstituteGalleryUpload';
 import GalleryPage from './components/GalleryPage';
 import StartupShowcase from './components/StartupShowcase';
+import ForgetPassword from './components/ForgetPassword';
  // ✅ Import the Admin Dashboard
 
  // ✅ Import the Delete Notice Page
@@ -54,6 +57,8 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/user-dashboard" element={<UserDashboard />} />
         <Route path="/institute-dashboard" element={<InstituteDashboard />} />
+        <Route path="/forgot-password" element={<ForgetPassword />} />
+
         <Route path="/institute/create-event" element={<CreateEventForm />} />
         <Route path="/institute/applications" element={<AppliedCandidatesPage />} />
         <Route path="startup-bihar-showcase" element={<StartupShowcase />} />

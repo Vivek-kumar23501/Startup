@@ -27,7 +27,7 @@ const LoginPage = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-       const response = await axios.post("http://localhost:5000/api/auth/login", {
+      const response = await axios.post("http://localhost:5000/api/auth/login", {
         email,
         password
       });
@@ -54,10 +54,15 @@ const LoginPage = () => {
 
       <div className="login-wrapper">
         <Container className="d-flex justify-content-center align-items-center min-vh-100">
-          <Row className="w-100 justify-content-center">
+          <Row className="w-100 justify-content-center"  style={{
+           marginRight:"20px"
+          }}>
             <Col md="6" lg="5">
-              <Card className="shadow-lg">
-                <CardBody>
+              <Card style={{
+               
+                width:"330px"
+              }} className="shadow-lg" mar >
+                <CardBody    className="login">
                   <CardTitle tag="h4" className="text-center mb-4 text-primary">
                     Login to Your Account
                   </CardTitle>
@@ -95,9 +100,9 @@ const LoginPage = () => {
                   </Form>
 
                   <div className="text-center mt-3">
-                    <Link to="/register" className="text-decoration-none text-primary">
-                      Create New Account
-                    </Link>
+                     <Link to="/forgot-password" className="text-decoration-none text-primary">
+                                         Forget Password?
+                                       </Link>
                   </div>
                 </CardBody>
               </Card>
