@@ -28,7 +28,7 @@ const InstituteNavbar = () => {
   }, []);
 
   return (
-    <Navbar color="info" light expand="md" className="custom-navbar w-100 shadow-sm px-3">
+    <Navbar  light expand="md" className="custom-navbar w-100 shadow-sm px-3">
       <NavbarBrand tag={Link} to="/" className="d-flex align-items-center">
         <img
           src="/public/logo.png"
